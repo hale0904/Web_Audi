@@ -127,11 +127,6 @@
     background-color: transparent;
 }
 
-.banner__item-btn-white,
-.banner__item-btn-black {
-    transition: all 0.35s ease;
-}
-
 .banner__item-link-white,
 .banner__item-link-black {
     font-size: 1.6rem;
@@ -149,12 +144,14 @@
 
 .banner__item-btn-white:hover {
     background-color: #bdbdbd;
+    transition: all 0.35s ease;
 }
 
 .banner__item-btn-black:hover,
 .banner__item-link-black:hover {
     border-color: #bdbdbd;
     color: #bdbdbd;
+    transition: all 0.35s ease;
 }
 
 /* Content */
@@ -240,4 +237,93 @@
     font-size: 1.7rem;
     letter-spacing: 0.5px;
     color: var(--text-color-header);
+}
+
+.productNew__container {
+    margin: 0 96px ;
+}
+
+.productNew__list {
+    list-style: none;
+}
+
+.productNew__item {
+    display: flex;
+    padding: 32px 0 56px;
+    align-items: center;
+}
+
+.productNew__img {
+    width: 50%;
+    flex: 1;
+}
+
+.productNew__item-content {
+    flex: 1;
+    padding: 0 56px;
+    height: 300px;
+    align-content: center;
+    position: relative;
+}
+
+.productNew__item-content-label {
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: 400;
+    top: 4%;
+    color: var(--text-color-content);
+}
+
+.productNew__item-content p {
+    margin-top: 16px;
+    font-size: 1.8rem;
+    color: var(--text-color-header);
+}
+
+.productNew__item-btn-black,
+.productNew__item-btn-white {
+    margin-top: 32px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.productNew__item-btn-black {
+    background-color: var(--black-color);
+    border: 1px solid black;
+    padding: 16px 32px;
+}
+
+.productNew__item-btn-black:hover {
+    background-color: #525252;
+    border: 1px solid #525252;
+    transition: all 0.35s ease;
+}
+
+.productNew__item-btn-white {
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 0.2px 0.2px inset;
+    padding: 16px 0px;
+}
+
+.productNew__item-link-white:hover,
+.productNew__item-btn-white:hover {
+    border-color: #8b8b8b;
+    color: #8b8b8b;
+    transition: all 0.35s ease;
+}
+
+.productNew__item-link-black,
+.productNew__item-link-white {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.productNew__item-link-black {
+    color: var(--white-color);
+}
+
+.productNew__item-link-white {
+    color: var(--black-color);
+    padding: 18px 32px;
 }
