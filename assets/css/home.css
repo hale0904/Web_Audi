@@ -1,3 +1,4 @@
+/* Header */
 .header {
     height: var(--header-height);
     background-color: var(--white-color);
@@ -51,4 +52,112 @@
 
 .header__search-btn-icon {
     font-size: 1.8rem;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 100vh;
+    min-width: 640px;
+    padding-top: 34%;
+    background: url('/assets/images/Banner.avif') center / cover no-repeat;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* độ cao vùng tối */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    pointer-events: none; /* không cản trở thao tác chuột */
+    z-index: 1;
+}
+
+.banner__img {
+    height: 100%;
+}
+
+.banner__tittle,
+.banner__content,
+.banner__list {
+    position: relative;
+    z-index: 2;
+}
+
+.banner__tittle {
+    color: var(--white-color);
+    margin-left: 96px;
+    margin-bottom: 12px;
+    padding: 20px 0;
+    font-size: 4.4rem;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+}
+
+.banner__content {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-left: 96px;
+}
+
+.banner__list {
+    margin-top: 24px;
+    margin-left: 96px;
+    display: flex;
+}
+
+.banner__item {
+    list-style: none;
+    padding-right: 8px;
+}
+
+.banner__item-btn-white {
+    padding: 18px 36px;
+    border: none;
+    background-color: var(--white-color);
+}
+
+.banner__item-btn-black {
+    padding: 17px 0;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.banner__item-btn-white,
+.banner__item-btn-black {
+    transition: all 0.35s ease;
+}
+
+.banner__item-link-white,
+.banner__item-link-black {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.banner__item-link-white {
+    color: var(--black-color);
+}
+
+.banner__item-link-black {
+    color: var(--white-color);
+    padding: 17px 36px;
+}
+
+.banner__item-btn-white:hover {
+    background-color: #bdbdbd;
+}
+
+.banner__item-btn-black:hover,
+.banner__item-link-black:hover {
+    border-color: #bdbdbd;
+    color: #bdbdbd;
+}
+
+/* Content */
+.content {
+    height: 100vh;
 }
